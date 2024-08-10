@@ -22,4 +22,5 @@ echo 'alias ll="ls -al"' >> ~/.bashrc
 source ~/.bashrc
 
 mkdir -p ~/go/src/istio.io/
+cd ~/go/src/istio.io/
 git clone https://github.com/wulianglongrd/istio
