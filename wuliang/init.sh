@@ -21,10 +21,5 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 echo 'alias ll="ls -al"' >> ~/.bashrc
 source ~/.bashrc
 
-# clone istio
-cd ~
+mkdir -p ~/go/src/istio.io/
 git clone https://github.com/wulianglongrd/istio
-
-cd oss-fuzz
-/usr/bin/python3 infra/helper.py build_image istio
-/usr/bin/python3 infra/helper.py build_fuzzers istio ~/istio
